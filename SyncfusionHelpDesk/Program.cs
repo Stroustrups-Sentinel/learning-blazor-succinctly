@@ -28,7 +28,23 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+/*
+ * BLAZOR SUCCINCTLY CODE [DEPRECATED]
+services.AddDefaultIdentity<IdentityUser>()
+.AddRoles<IdentityRole>() // Enable roles
+.AddEntityFrameworkStores<ApplicationDbContext>();
+*/
+
+/*
+ * ORIGINAL CODE
+ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddSignInManager()
+    .AddDefaultTokenProviders();
+ */
+
+ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>() // Enable roles
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddSignInManager()
     .AddDefaultTokenProviders();
