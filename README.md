@@ -13,9 +13,11 @@ hello Blazor!
     private string Greet="Hello";
 }
 ```
-###### After getting bamboozled and confused with roughly similar content,
+###### After getting bamboozled and confused with roughly similar content and returning to <u>[a relatively old project](https://github.com/Stroustrups-Sentinel/SyncfusionHelpDeskClientApp)</u>,
 ###### i convinced myself to start with Blazor first [server-side-blazor] before i jump into the client-side one with Webassembly.
 ###### so for the sake of progress, here goes 😄😁😅
+---
+ [ℹ️ REPOSITORY LINK](https://github.com/ADefWebserver/SyncfusionHelpDesk)  FROM THE BOOK AUTHOR
 ---
 
 ### Will be learning with content which includes these links
